@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Alan 汤包]]></title>
-  <link href="http://alant.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: python | Alan 汤包]]></title>
+  <link href="http://alant.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://alant.github.io/"/>
   <updated>2015-09-30T16:11:52-07:00</updated>
   <id>http://alant.github.io/</id>
@@ -34,7 +34,7 @@
 
 <p>代码如下：</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -61,20 +61,26 @@
 <span class='line-number'>25</span>
 <span class='line-number'>26</span>
 <span class='line-number'>27</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c"># Write a function to find the longest common prefix string amongst an array of strings.</span>
-</span><span class='line'><span class="c">#tags: String</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Write</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="n">find</span> <span class="n">the</span> <span class="n">longest</span> <span class="n">common</span> <span class="n">prefix</span> <span class="n">string</span> <span class="n">amongst</span> <span class="n">an</span> <span class="n">array</span> <span class="n">of</span> <span class="n">strings</span><span class="o">.&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">tags</span><span class="p">:</span> <span class="n">String</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
 </span><span class='line'>    <span class="c"># @param {string[]} strs</span>
 </span><span class='line'>    <span class="c"># @return {string}</span>
 </span><span class='line'>    <span class="k">def</span> <span class="nf">longestCommonPrefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">strs</span><span class="p">):</span>
-</span><span class='line'>        <span class="k">if</span> <span class="n">strs</span> <span class="o">==</span> <span class="p">[]:</span> <span class="k">return</span> <span class="s">&quot;&quot;</span>
-</span><span class='line'>        <span class="n">result</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">strs</span> <span class="o">==</span> <span class="p">[]:</span> <span class="k">return</span> <span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">result</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span>
 </span><span class='line'>        <span class="n">done</span> <span class="o">=</span> <span class="bp">False</span>
 </span><span class='line'>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">strs</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
 </span><span class='line'>            <span class="n">char</span> <span class="o">=</span> <span class="n">strs</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
 </span><span class='line'>            <span class="k">for</span> <span class="nb">str</span> <span class="ow">in</span> <span class="n">strs</span><span class="p">:</span>
-</span><span class='line'>                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+</span><span class='line'>                <span class="k">if</span> <span class="n">i</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
 </span><span class='line'>                    <span class="n">done</span> <span class="o">=</span> <span class="bp">True</span>
 </span><span class='line'>                    <span class="k">break</span>
 </span><span class='line'>                <span class="k">if</span> <span class="n">char</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
@@ -83,21 +89,12 @@
 </span><span class='line'>            <span class="k">if</span> <span class="n">done</span><span class="p">:</span>
 </span><span class='line'>                <span class="k">break</span>
 </span><span class='line'>            <span class="n">result</span> <span class="o">+=</span> <span class="n">char</span>
-</span><span class='line'>        <span class="k">return</span> <span class="n">result</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">result</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="n">solution</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
-</span><span class='line'><span class="n">testInput</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;abc&quot;</span><span class="p">,</span> <span class="s">&quot;abcd&quot;</span><span class="p">,</span> <span class="s">&quot;abdd&quot;</span><span class="p">]</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">solution</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
+</span><span class='line'><span class="n">testInput</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">abc</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">abcd</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">abdd</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;]</span>
 </span><span class='line'><span class="k">print</span> <span class="n">solution</span><span class="o">.</span><span class="n">longestCommonPrefix</span><span class="p">(</span><span class="n">testInput</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://alant.github.io/blog/2015/09/29/hello-world/"/>
-    <updated>2015-09-29T12:31:00-07:00</updated>
-    <id>http://alant.github.io/blog/2015/09/29/hello-world</id>
-    <content type="html"><![CDATA[<p>Using Octopress. Found a theme. Time to sleep now. Not much to write about today. </p>
+</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   

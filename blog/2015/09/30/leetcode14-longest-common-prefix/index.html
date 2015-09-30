@@ -1,24 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Alan 汤包]]></title>
-  <link href="http://alant.github.io/atom.xml" rel="self"/>
-  <link href="http://alant.github.io/"/>
-  <updated>2015-09-30T16:11:52-07:00</updated>
-  <id>http://alant.github.io/</id>
-  <author>
-    <name><![CDATA[汤包]]></name>
-    <email><![CDATA[alan.htang@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+<!DOCTYPE HTML>
 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Leetcode14 Longest Common Prefix - Alan 汤包</title>
+	<meta name="author" content="汤包">
+
+	
+	<meta name="description" content="Leetcode14 Longest Common Prefix 原本发表在新浪微博上面。 用这篇帖子测试一下排版和代码引用 很惭愧，少数几道自己独立思考写对的题。 刷题较郁闷， 就写一下思路放松一下吧。 听说 medium 以上的题大家也都看着答案刷的。 Google &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Alan 汤包" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://alant.github.io/blog/2015/09/30/leetcode14-longest-common-prefix/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
   
-  <entry>
-    <title type="html"><![CDATA[Leetcode14 Longest Common Prefix]]></title>
-    <link href="http://alant.github.io/blog/2015/09/30/leetcode14-longest-common-prefix/"/>
-    <updated>2015-09-30T13:00:00-07:00</updated>
-    <id>http://alant.github.io/blog/2015/09/30/leetcode14-longest-common-prefix</id>
-    <content type="html"><![CDATA[<p>原本发表在<a href="http://blog.sina.com.cn/s/blog_6f2e841a0102vvdy.html">新浪微博</a>上面。 用这篇帖子测试一下排版和代码引用</p>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-2155923-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("alan.htang@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+<nav id="sub-nav">
+  <div class="social">
+    
+    <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+    
+    
+    <a class="linkedin" href="http://www.linkedin.com/in/alantang" title="LinkedIn">LinkedIn</a>
+    
+    
+    <a class="github" href="https://github.com/alant" title="GitHub">GitHub</a>
+    
+    
+    
+    <a class="twitter" href="http://twitter.com/alant" title="Twitter">Twitter</a>
+    
+       
+    
+    <!-- <a class="email" href="mailto:alan.htang@gmail.com" title="Email">Email</a> -->
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+  </div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Leetcode14 Longest Common Prefix</h1>
+	<div class="entry-content" itemprop="articleBody"><p>原本发表在<a href="http://blog.sina.com.cn/s/blog_6f2e841a0102vvdy.html">新浪微博</a>上面。 用这篇帖子测试一下排版和代码引用</p>
 
 <p>很惭愧，少数几道自己独立思考写对的题。 刷题较郁闷， 就写一下思路放松一下吧。 听说 medium 以上的题大家也都看着答案刷的。</p>
 
@@ -89,16 +180,55 @@
 </span><span class='line'><span class="n">testInput</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;abc&quot;</span><span class="p">,</span> <span class="s">&quot;abcd&quot;</span><span class="p">,</span> <span class="s">&quot;abdd&quot;</span><span class="p">]</span>
 </span><span class='line'><span class="k">print</span> <span class="n">solution</span><span class="o">.</span><span class="n">longestCommonPrefix</span><span class="p">(</span><span class="n">testInput</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://alant.github.io/blog/2015/09/29/hello-world/"/>
-    <updated>2015-09-29T12:31:00-07:00</updated>
-    <id>http://alant.github.io/blog/2015/09/29/hello-world</id>
-    <content type="html"><![CDATA[<p>Using Octopress. Found a theme. Time to sleep now. Not much to write about today. </p>
-]]></content>
-  </entry>
-  
-</feed>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    汤包
+
+
+Hosted on: <a href="https://pages.github.com/"> Github pages</a> Powered by: <a href="http://octopress.org/">Octopress</a> Theme: <a href="https://github.com/shashankmehta/greyshade">greyshade</a>
+</footer>
+		</div>
+	</div>
+	
+
+<script type="text/javascript">
+      var disqus_shortname = 'alant';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
