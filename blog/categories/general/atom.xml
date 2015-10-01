@@ -4,7 +4,7 @@
   <title><![CDATA[Category: general | Alan 汤包]]></title>
   <link href="http://alant.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://alant.github.io/"/>
-  <updated>2015-09-30T23:37:37-07:00</updated>
+  <updated>2015-09-30T23:41:27-07:00</updated>
   <id>http://alant.github.io/</id>
   <author>
     <name><![CDATA[汤包]]></name>
@@ -23,27 +23,20 @@
 <!--more-->
 
 <ul>
-<li>Burning man
-
-<ul>
-<li>I went to Burning Man in 2014. Camped in the desert for a week. It was an awesome experience. </li>
-</ul></li>
-<li>Rotation in China
-
-<ul>
-<li>I went back to Beijing in the first quarter of 2015. Met a lot of old and new friends. It was a lot of fun. </li>
-</ul></li>
-<li>Sabbatical
-
-<ul>
-<li>I took 3 months off after returning to the U.S. from the rotation in China. It was a good time off to do some thinking, learning and reading.</li>
-</ul></li>
+<li>Burning man<br>
+I went to Burning Man in 2014. Camped in the desert for a week. It was an awesome experience. </li>
+<li>Rotation in China<br>
+I went back to Beijing in the first quarter of 2015. Met a lot of old and new friends. It was a lot of fun. </li>
+<li>Sabbatical<br>
+I took 3 months off after returning to the U.S. from the rotation in China. It was a good time off to do some thinking, learning and reading.</li>
 <li>Some coding<br>
 I picked up a bit of coding during my sabbatical.
 
 <ul>
 <li>Python (mainly used to solve Leetcode questions)</li>
-<li>Javascript</li>
+<li>Javascript
+
+<ul>
 <li>Node.js
 
 <ul>
@@ -51,6 +44,7 @@ I picked up a bit of coding during my sabbatical.
 </ul></li>
 <li>Angular.js</li>
 <li>Meteor.js</li>
+</ul></li>
 </ul></li>
 </ul>
 ]]></content>
